@@ -1,0 +1,53 @@
+// Resizes headers
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 700;
+    line-height: 1;
+    margin: 1rem 0;
+    margin-top: 2.5rem;
+    color: $dark;
+  }
+}
+
+// $evenheaders: 2, 4, 6;
+
+// @each $i in $evenheaders {
+//   h#{$i} {
+//     color: $primary;
+//   }
+// }
+
+h1 {
+  font-size: $size-1;
+  color: $dark;
+}
+
+h2 {
+  font-size: $size-2;
+  color: $dark;
+}
+
+h3 {
+  font-size: $size-3;
+  color: $dark;
+}
+
+h4 {
+  font-size: $size-4;
+  color: $dark;
+}
+
+h5 {
+  font-size: $size-5;
+  color: $dark;
+}
+
+h6 {
+  font-size: $size-6;
+  color: $dark;
+}
+
+// p {
+//   color: $dark;
+// }

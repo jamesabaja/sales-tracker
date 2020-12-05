@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy:production": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=jamesabaja.tech GATSBY_ENV=production yarn build && gatsby-plugin-s3 deploy",
+    "deploy:staging": "yarn -n \"-r dotenv/config\" && GATSBY_ENV=staging yarn build && gatsby-plugin-s3 deploy",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "axios": "^0.19.2",
+    "bulma": "^0.8.0",
+    "classnames": "^2.2.6",
+    "formik": "^2.1.4",
+    "gatsby": "^2.19.45",
+    "gatsby-image": "^2.4.6",
+    "gatsby-plugin-react-helmet": "^3.3.3",
+    "gatsby-plugin-s3": "^0.3.3",
+    "gatsby-plugin-sass": "^2.2.0",
+    "gatsby-plugin-sharp": "^2.6.10",
+    "gatsby-source-filesystem": "^2.3.10",
+    "gatsby-transformer-sharp": "^2.5.4",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "react-select": "^3.1.0",
+    "sharp": "^0.25.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import "./variables.scss";
+@import "./spacings.scss";
+@import "bulma";
+@import "./typography.scss";
+
+html {
+  scroll-behavior: smooth;
+}
