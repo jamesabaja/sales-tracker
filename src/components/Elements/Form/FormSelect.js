@@ -93,7 +93,7 @@ const FormSelect = props => {
         }
       </Field>
       <p className="help is-danger">
-        <ErrorMessage name={name} />
+        <ErrorMessage name={`${name}.value`} />
       </p>
     </div>
   )

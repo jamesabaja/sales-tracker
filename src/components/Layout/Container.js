@@ -6,6 +6,7 @@ const Container = ({
   mobile,
   tablet,
   desktop,
+  fullhd,
   isCentered,
   customClassName,
 }) => {
@@ -17,7 +18,8 @@ const Container = ({
     >
       <div
         className={`column is-${mobile || 12}-mobile is-${tablet ||
-          10}-tablet is-${desktop || 8}-desktop ${customClassName || ""}`}
+          10}-tablet is-${desktop || 8}-desktop is-${fullhd ||
+          6}-fullhd ${customClassName || ""}`}
       >
         {children}
       </div>

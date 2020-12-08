@@ -1,16 +1,16 @@
 import React, { Fragment } from "react"
 
-// import Navbar from "./Navbar"
+import Navbar from "./Navbar"
 // import Footer from "./Footer"
-// import SEO from "./SEO"
+import SEO from "./SEO"
 
 import "../../styles/global.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, seoTitle }) => {
   return (
     <Fragment>
-      {/* <SEO title="James Abaja" /> */}
-      {/* <Navbar  /> */}
+      <SEO title={seoTitle} />
+      <Navbar />
       {children}
       {/* <Footer /> */}
     </Fragment>

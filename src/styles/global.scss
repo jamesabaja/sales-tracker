@@ -3,7 +3,27 @@
 @import "./spacings.scss";
 @import "bulma";
 @import "./typography.scss";
+@import "~bulma-checkradio";
 
 html {
   scroll-behavior: smooth;
+}
+
+.has-text-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.has-text-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.has-text-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.is-checkradio[type="checkbox"]:hover:not([disabled]) + label::before,
+.is-checkradio[type="checkbox"]:hover:not([disabled]) + label:before,
+.is-checkradio[type="radio"]:hover:not([disabled]) + label::before,
+.is-checkradio[type="radio"]:hover:not([disabled]) + label:before {
+  border-color: $light !important;
 }

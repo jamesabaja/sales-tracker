@@ -30,5 +30,17 @@ module.exports = {
         region: process.env.GATSBY_AWS_S3_REGION,
       },
     },
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        components: `${__dirname}/src/components`,
+        elements: `${__dirname}/src/components/Elements`,
+        layout: `${__dirname}/src/components/Layout`,
+        pages: `${__dirname}/src/pages`,
+        services: `${__dirname}/src/services`,
+        static: `${__dirname}/src/static`,
+      },
+    },
+    `gatsby-env-variables`,
   ],
 }

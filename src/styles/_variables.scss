@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-$family-sans-serif: "Ubuntu",
-sans-serif;
+$family-sans-serif: "Ubuntu", sans-serif;
+
+$green: #85bb65; // Teal
+
+$primary: $green;
+$dark: black;
 
 $size-1: 3rem !default;
 $size-2: 2.5rem !default;
@@ -15,6 +20,6 @@ $body-font-size: $size-6;
 
 $spacer: 1rem;
 $gap: 32px;
-$desktop: 960px+(2 * $gap);
+$desktop: 960px+ (2 * $gap);
 $tablet: 769px;
 $mobile: 320px;
